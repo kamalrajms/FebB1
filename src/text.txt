@@ -1,0 +1,54 @@
+23/02/2026
+
+## react intro
+
+    What is React?
+
+    1) React is a JavaScript library (not a framework) developed by Facebook (Meta) for building user interfaces (UIs), especially Single Page Applications (SPAs).
+
+    2) It helps developers build reusable UI components that update efficiently when data changes.
+
+    Instead of reloading a whole webpage when something changes, React updates only the parts of the UI that need to change.
+
+    -------
+    Why do we need React?
+
+	It makes UI development faster, cleaner, and more efficient.
+
+	Provides a better user experience with smooth updates without page reloads.
+
+
+    ## must need to install node.js
+ 
+## procedure to initiate project
+
+    step 1 : npm create vite@latest [project_name]
+    step 2 : select react
+    step 3 : select javascript+swc
+    step 4 : npm install                // install node module packages
+    step 5 : npm run dev
+
+    if you want to re-run your project mean 
+        npm run dev
+
+
+24/02/2026
+
+## Props
+
+    props is nothing but drilling data from parent to child components.
+
+        declearing a props
+        destructuring a props
+
+## Conditional rendering
+
+    Conditional rendering means showing or hiding  parts of UI 
+    based on some conditions (ststs,props..).
+
+        ternary operator {condition}?true:false
+        logical operator    && || !
+
+## list rendering
+
+    rendering multiple items dynamically using .map()
