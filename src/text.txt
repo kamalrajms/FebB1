@@ -52,3 +52,29 @@
 ## list rendering
 
     rendering multiple items dynamically using .map()
+
+25/02/2026
+
+## styleing in react.js
+
+    global way styleing--- index.css,app.css are called as global way style
+    external way of styleing--- external styleing file for a component
+    module way styleing  ---  we need to save the name as [filename.module.css]
+    inline styleing--- style
+    object way styleing---- adding properites as an object
+
+## useState()
+
+    useState is a react hook that allows you to add state (data that can change over time)
+    to a functionl component.
+
+    Normally ,in js functions, variables disappear after the function runs.
+    But with useState ,react remembers values between re-renders.
+
+    syntax:
+
+        const[state,setState]=useState(initialValue)
+
+        state-- the current value of the variables
+        setState--- a function that update the state
+        initialValue--- the starting value of the state.

@@ -3,6 +3,7 @@ import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
 import ConditionalRendering from "./ConditionalRendering";
 import Listrendering from "./Listrendering";
+import UseStateHook from "./Component/UseStateHook";
 
 // import
 
@@ -25,6 +26,7 @@ export default function App() {
   return (
     // structure
     <div>
+      <UseStateHook/>
       <Listrendering />
       <ConditionalRendering />
       <h2>name: {name}</h2>
@@ -34,6 +36,7 @@ export default function App() {
       ) : (
         <DestructuringProps Fullname={name} address={city} phone={phnum} />
       )}
+      <Greeting Firstname={name} number={age} />
       <DestructuringProps Fullname={name2} address={city2} phone={phnum2} />
       <DestructuringProps Fullname={name3} address={city3} phone={phnum3} />
     </div>

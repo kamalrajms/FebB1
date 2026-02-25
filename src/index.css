@@ -1,0 +1,16 @@
+.greeting {
+  background-color: blue;
+  color: #fff;
+  padding: 50px;
+}
+.good {
+  color: red;
+  background-color: blueviolet;
+  padding: 20px;
+}
+.conditional {
+  margin: 200px;
+}
+.destructure{
+  margin: 500px;
+}

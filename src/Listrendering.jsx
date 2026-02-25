@@ -11,8 +11,14 @@ export default function Listrendering() {
     { id: 2, name: "hari" },
     { id: 3, name: "dhoni" },
   ];
+
+  const theme = {
+    backgroundColor: "green",
+    color: "#fff",
+    padding: "50px",
+  };
   return (
-    <div>
+    <div style={theme}>
       <h2>list Rendering</h2>
       {/* eg1 */}
       <h4>fruits data</h4>
