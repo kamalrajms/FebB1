@@ -63,7 +63,7 @@
     inline styleing--- style
     object way styleing---- adding properites as an object
 
-## useState()
+## useState()and Forms and Controlled inputs
 
     useState is a react hook that allows you to add state (data that can change over time)
     to a functionl component.
@@ -78,3 +78,4 @@
         state-- the current value of the variables
         setState--- a function that update the state
         initialValue--- the starting value of the state.
+

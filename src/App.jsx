@@ -4,6 +4,9 @@ import DestructuringProps from "./DestructuringProps";
 import ConditionalRendering from "./ConditionalRendering";
 import Listrendering from "./Listrendering";
 import UseStateHook from "./Component/UseStateHook";
+import DarkMode from "./Component/DarkMode";
+import FieldUsetate from "./Component/FieldUsetate";
+import MultipleFields from "./Component/MultipleFields";
 
 // import
 
@@ -26,7 +29,10 @@ export default function App() {
   return (
     // structure
     <div>
-      <UseStateHook/>
+      <MultipleFields/>
+      <FieldUsetate/>
+      <DarkMode />
+      <UseStateHook />
       <Listrendering />
       <ConditionalRendering />
       <h2>name: {name}</h2>
