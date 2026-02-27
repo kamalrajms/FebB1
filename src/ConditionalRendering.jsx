@@ -5,6 +5,7 @@ export default function ConditionalRendering() {
   const user = false;
   return (
     <div className="conditional">
+      <h1>hello</h1>
       <h2 style={{ color: "#fff", backgroundColor: "red" }}>
         conditional rendering
       </h2>
@@ -14,8 +15,8 @@ export default function ConditionalRendering() {
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
           minima nostrum commodi voluptate ullam ducimus itaque iste! Dolore id
-          in hic itaque eligendi, aliquid similique, repudiandae quo quis eum
-          quibusdam?
+          in hic itaque eligendi,hewfbewhfb aliquid similique, repudiandae quo
+          quis eum quibusdam?uifuiwrf
         </p>
       )}
     </div>

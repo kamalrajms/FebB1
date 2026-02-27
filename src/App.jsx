@@ -7,6 +7,8 @@ import UseStateHook from "./Component/UseStateHook";
 import DarkMode from "./Component/DarkMode";
 import FieldUsetate from "./Component/FieldUsetate";
 import MultipleFields from "./Component/MultipleFields";
+import Register from "./Component/Register";
+import UseEffectHook from "./Component/UseEffectHook";
 
 // import
 
@@ -29,8 +31,10 @@ export default function App() {
   return (
     // structure
     <div>
-      <MultipleFields/>
-      <FieldUsetate/>
+      <UseEffectHook/>
+      <Register />
+      <MultipleFields />
+      <FieldUsetate />
       <DarkMode />
       <UseStateHook />
       <Listrendering />
