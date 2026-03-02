@@ -9,6 +9,9 @@ import FieldUsetate from "./Component/FieldUsetate";
 import MultipleFields from "./Component/MultipleFields";
 import Register from "./Component/Register";
 import UseEffectHook from "./Component/UseEffectHook";
+import Timer from "./Component/Timer";
+import StopWatchTimer from "./Component/StopWatchTimer";
+import UseEffectAPI from "./Component/UseEffectAPI";
 
 // import
 
@@ -31,7 +34,10 @@ export default function App() {
   return (
     // structure
     <div>
-      <UseEffectHook/>
+      <UseEffectAPI />
+      <StopWatchTimer />
+      <Timer />
+      <UseEffectHook />
       <Register />
       <MultipleFields />
       <FieldUsetate />
