@@ -101,3 +101,16 @@
 
         dependency--- if that dependency is  empty means ,useEffect 
                         willbe only once at the begining.
+
+3/3/2026
+
+## useContext()
+
+    Passing data from a parent component down to deep nested hild component is annoying.
+    Normally ,you'd have to pass Props manually Throug each level (Child  props drilling).
+    useContext lets you skip all the middle component and share data directly.
+
+
+        create a contect
+        Provide a value
+        Consume the value

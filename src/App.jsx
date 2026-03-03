@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, createContext, useState } from "react";
 import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
 import ConditionalRendering from "./ConditionalRendering";
@@ -12,6 +12,10 @@ import UseEffectHook from "./Component/UseEffectHook";
 import Timer from "./Component/Timer";
 import StopWatchTimer from "./Component/StopWatchTimer";
 import UseEffectAPI from "./Component/UseEffectAPI";
+import First from "./Context/First";
+import ContextForm from "./Context/ContextForm";
+
+export const Pass = createContext();
 
 // import
 
@@ -31,9 +35,27 @@ export default function App() {
   const phnum3 = "484998995";
   const display = false;
 
+  const [mode, setMode] = useState("light");
+  const data = { name: "Dhoni" };
+  console.log(mode);
+  
+
   return (
     // structure
     <div>
+      <nav>
+        <h1>usecontext eg2</h1>
+        <Pass.Provider value={{ mode, setMode, data }}>
+          <ContextForm />
+        </Pass.Provider>
+      </nav>
+
+      <div style={{ border: "2px solid #000", padding: "20px" }}>
+        <h2>App component---{name}</h2>
+        <Pass.Provider value={name}>
+          <First />
+        </Pass.Provider>
+      </div>
       <UseEffectAPI />
       <StopWatchTimer />
       <Timer />
