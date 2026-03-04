@@ -14,6 +14,7 @@ import StopWatchTimer from "./Component/StopWatchTimer";
 import UseEffectAPI from "./Component/UseEffectAPI";
 import First from "./Context/First";
 import ContextForm from "./Context/ContextForm";
+import UseRefHook from "./Component/UseRefHook";
 
 export const Pass = createContext();
 
@@ -43,6 +44,7 @@ export default function App() {
   return (
     // structure
     <div>
+      <UseRefHook/>
       <nav>
         <h1>usecontext eg2</h1>
         <Pass.Provider value={{ mode, setMode, data }}>

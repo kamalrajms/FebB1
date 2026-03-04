@@ -25,3 +25,20 @@
   color: #fff;
   padding: 50px;
 }
+
+/* useref */
+
+.image-box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+.org-image {
+  width: 200px;
+  height: 200px;
+  /* background-color: aqua; */
+  cursor: pointer;
+  border: 2px solid #333;
+}

@@ -114,3 +114,18 @@
         create a contect
         Provide a value
         Consume the value
+
+
+
+4/3/2026
+
+## useRef()
+
+    useRef is a react hook that gives you a box (.current) you can store anything 
+    like--- number,str,object,function,even Dom Element.
+
+    that value persists between renders
+
+    Updating it does not cause your component to re-render.
+
+    {current:value}
