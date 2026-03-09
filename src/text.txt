@@ -129,3 +129,45 @@
     Updating it does not cause your component to re-render.
 
     {current:value}
+
+5/3/2026
+
+## useReducer
+
+        syntax:
+
+            const [state,dispatch]=useReducer(reducerfunnction,initialValue)
+
+
+            state--- current state(like useState value)
+            dispatch(action)--- a function to tell the  reducer what to do
+            reducerfunnction(state,action)---the logic that  return what to do
+            initialValue--- starting value.
+
+
+9/3/2026
+
+## useCallback()
+
+    useCallback is a react hook used to  memoize  (store) a function so that react Does not recreate
+    the function on every render unless dependency changes .
+
+    it is mainly used for performance optimization in rect Applications.
+
+    Every time a component re-renders,
+    it create a brand-new copy of Every function inside it.
+
+    Every if the function's code looks exactly the same,
+    React  sees it as different because it's new object in memory.
+
+    syntax:
+
+        const name=useCallback(()=>{
+            // code...
+        },[dependency,dependency2...])
+
+
+## useId() hook
+
+    useId() is a react hook that create  a unique value and stable ID 
+    for each component instance.

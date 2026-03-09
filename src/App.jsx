@@ -15,6 +15,9 @@ import UseEffectAPI from "./Component/UseEffectAPI";
 import First from "./Context/First";
 import ContextForm from "./Context/ContextForm";
 import UseRefHook from "./Component/UseRefHook";
+import UseCallBackHook from "./Component/UseCallBackHook";
+import CallbackHook from "./Component/CallbackHook";
+import UseIdHook from "./Component/UseIdHook";
 
 export const Pass = createContext();
 
@@ -39,12 +42,19 @@ export default function App() {
   const [mode, setMode] = useState("light");
   const data = { name: "Dhoni" };
   console.log(mode);
-  
 
   return (
     // structure
     <div>
-      <UseRefHook/>
+      <h1>component 1</h1>
+      <UseIdHook />
+      <h1>component 2</h1>
+      <UseIdHook />
+      <h1>component 3</h1>
+      <UseIdHook />
+      <CallbackHook />
+      <UseCallBackHook />
+      <UseRefHook />
       <nav>
         <h1>usecontext eg2</h1>
         <Pass.Provider value={{ mode, setMode, data }}>
