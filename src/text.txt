@@ -171,3 +171,51 @@
 
     useId() is a react hook that create  a unique value and stable ID 
     for each component instance.
+
+11/03/2026
+
+## Routoing in react and nested routing
+
+    Routing means navigation between diffetent page in a web app without refreshing
+    the browser.
+
+    In traditional website .clicking a link reloads the whole page.
+
+    In react SAP ,Routing lets us changes the view without   reloading.
+
+
+            better performance (ni full page reload)
+            Smooth user experiance
+            Control over navigation without server request
+
+
+
+    commend :npm install react-router-dom
+
+    Structure:
+
+        <BrowserRouter>
+        <Routes>
+        <Route path="We need to add address path for a component" elemant={<component/>}/>
+        <Route path="home" elemant={<Home/>}/>
+        <Route path="about" elemant={<About/>}/>
+        <Route path="service" elemant={<Service/>}/>
+        </Routes>
+        </BrowserRouter>
+
+
+        BrowserRouter:
+
+            it is   the main wrapper component for routing in react app.
+            it enables navigation using browser URL (history API)
+            Without this,  routing will not work.
+
+        Routers  
+            it contains all the  <Route/> component
+            It tells react which component to show at a for which path
+            Only one route will match and render at a time
+
+        Route
+
+            Defins a specific URL Path andWhich component should load for that path.
+

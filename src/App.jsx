@@ -18,6 +18,13 @@ import UseRefHook from "./Component/UseRefHook";
 import UseCallBackHook from "./Component/UseCallBackHook";
 import CallbackHook from "./Component/CallbackHook";
 import UseIdHook from "./Component/UseIdHook";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "./Router/Home";
+import About from "./Router/About";
+import Service from "./Router/Service";
+import Contact from "./Router/Contact";
+import WebDev from "./Router/WebDev";
+import AppDev from "./Router/AppDev";
 
 export const Pass = createContext();
 
@@ -46,49 +53,71 @@ export default function App() {
   return (
     // structure
     <div>
-      <h1>component 1</h1>
-      <UseIdHook />
-      <h1>component 2</h1>
-      <UseIdHook />
-      <h1>component 3</h1>
-      <UseIdHook />
-      <CallbackHook />
-      <UseCallBackHook />
-      <UseRefHook />
-      <nav>
-        <h1>usecontext eg2</h1>
-        <Pass.Provider value={{ mode, setMode, data }}>
-          <ContextForm />
-        </Pass.Provider>
-      </nav>
+      {display && (
+        <div>
+          <h1>component 1</h1>
+          <UseIdHook />
+          <h1>component 2</h1>
+          <UseIdHook />
+          <h1>component 3</h1>
+          <UseIdHook />
+          <CallbackHook />
+          <UseCallBackHook />
+          <UseRefHook />
+          <nav>
+            <h1>usecontext eg2</h1>
+            <Pass.Provider value={{ mode, setMode, data }}>
+              <ContextForm />
+            </Pass.Provider>
+          </nav>
 
-      <div style={{ border: "2px solid #000", padding: "20px" }}>
-        <h2>App component---{name}</h2>
-        <Pass.Provider value={name}>
-          <First />
-        </Pass.Provider>
-      </div>
-      <UseEffectAPI />
-      <StopWatchTimer />
-      <Timer />
-      <UseEffectHook />
-      <Register />
-      <MultipleFields />
-      <FieldUsetate />
-      <DarkMode />
-      <UseStateHook />
-      <Listrendering />
-      <ConditionalRendering />
-      <h2>name: {name}</h2>
-      <h1>Hello everyone</h1>
-      {display ? (
-        <Greeting Firstname={name} number={age} />
-      ) : (
-        <DestructuringProps Fullname={name} address={city} phone={phnum} />
+          <div style={{ border: "2px solid #000", padding: "20px" }}>
+            <h2>App component---{name}</h2>
+            <Pass.Provider value={name}>
+              <First />
+            </Pass.Provider>
+          </div>
+          <UseEffectAPI />
+          <StopWatchTimer />
+          <Timer />
+          <UseEffectHook />
+          <Register />
+          <MultipleFields />
+          <FieldUsetate />
+          <DarkMode />
+          <UseStateHook />
+          <Listrendering />
+          <ConditionalRendering />
+          <h2>name: {name}</h2>
+          <h1>Hello everyone</h1>
+          {display ? (
+            <Greeting Firstname={name} number={age} />
+          ) : (
+            <DestructuringProps Fullname={name} address={city} phone={phnum} />
+          )}
+          <Greeting Firstname={name} number={age} />
+          <DestructuringProps Fullname={name2} address={city2} phone={phnum2} />
+          <DestructuringProps Fullname={name3} address={city3} phone={phnum3} />
+        </div>
       )}
-      <Greeting Firstname={name} number={age} />
-      <DestructuringProps Fullname={name2} address={city2} phone={phnum2} />
-      <DestructuringProps Fullname={name3} address={city3} phone={phnum3} />
+      <BrowserRouter>
+        <div className="header">
+          <Link to={"/Home"}>Home</Link>
+          <Link to={"/About"}>About</Link>
+          <Link to={""}>Service</Link>
+          <Link to={"/Contact"}>Contact</Link>
+        </div>
+
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} >
+            <Route path="WebDevelopment" element={<WebDev/>}/>
+            <Route path="AppDevelopment" element={<AppDev/>}/>
+          </Route>
+          <Route path="" element={<Service />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
