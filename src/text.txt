@@ -233,3 +233,31 @@
         useNavigate is also from react routing dom , it is used for navigation between components
         as functionaly.
  
+
+## API integration
+
+    featch,axios
+
+    commend:npm i axios
+
+    structure od axiox:
+
+        responst={
+            data=[
+                {id:1,name:"rfwr"},
+                {id:1,name:"rfwr"},
+                {id:1,name:"rfwr"}
+                ]
+            status:200,
+            config:ok,
+            header:
+        }
+
+## Custome hook
+
+    A custom hook is a reusable function in react that contains logic useNavigate hook
+    (like useState,useEffect...)
+
+    it allows you to share and reuse stateful logic between multiple component without repeating code.
+
+    the name of a custom hook must start  with use ,such as useFetch and useLocator... js file
