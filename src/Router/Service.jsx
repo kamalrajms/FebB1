@@ -1,5 +1,6 @@
 import React from "react";
 import useCustomAPI from "../Component/useCustomAPI";
+import CRUD from "../Component/CRUD";
 
 export default function Service() {
   const {
@@ -11,6 +12,7 @@ export default function Service() {
   if (error) return <p>Error:{error}</p>;
   return (
     <div>
+      <CRUD/>
       <h2>Service component</h2>
       {users.map((user) => (
         <div

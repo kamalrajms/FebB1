@@ -233,6 +233,7 @@
         useNavigate is also from react routing dom , it is used for navigation between components
         as functionaly.
  
+16/3/2026
 
 ## API integration
 
@@ -261,3 +262,18 @@
     it allows you to share and reuse stateful logic between multiple component without repeating code.
 
     the name of a custom hook must start  with use ,such as useFetch and useLocator... js file
+
+17/3/2026
+
+## CRUD operation
+
+
+    create data--->Post
+    Read data---->GET
+    Updata data--->PUT
+    Delete data--->DELETE
+
+                                https request
+    Clint [React app]       ------------------>         server
+                            <------------------
+                                https response
