@@ -277,3 +277,21 @@
     Clint [React app]       ------------------>         server
                             <------------------
                                 https response
+
+
+18/3/2026
+
+## Netlify
+
+  Initially to pust your application into git.
+  To create a account in netlify .
+  You need to link your github with netlify.
+  Deploy application in netlify.
+
+
+
+
+
+
+            Thank you...
+
